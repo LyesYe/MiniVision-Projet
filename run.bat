@@ -1,5 +1,5 @@
+cls
 del lex.yy.c
 flex lexical.l
-bison -d syntax.y 
-gcc lex.yy.c syntax.tab.c -lfl -ly -o prog
+gcc lex.yy.c -lfl -o prog
 prog.exe<test.txt
