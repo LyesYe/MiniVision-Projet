@@ -282,21 +282,24 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 33
-#define YY_END_OF_BUFFER 34
-static yyconst short int yy_accept[92] =
+#define YY_NUM_RULES 48
+#define YY_END_OF_BUFFER 49
+static yyconst short int yy_accept[129] =
     {   0,
-        0,    0,   34,   31,   13,   28,   30,    7,    1,    2,
-       11,    8,    5,   10,   29,   12,   22,    6,    9,   31,
-        3,    4,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,    0,    0,   22,    0,   32,   15,   32,   32,   32,
-       32,   32,   32,   32,   32,    0,   20,    0,   21,   24,
-       32,   32,   32,   17,   32,    0,   32,   32,   22,    0,
-       27,   26,   32,   32,    0,   32,   32,    0,   25,   32,
-        0,   32,   19,   21,   14,    0,   32,    0,   32,   18,
-       32,   32,   32,    0,    0,    0,    0,    0,    0,   16,
-        0
+        0,    0,   49,   47,   17,   43,   45,    8,   36,   10,
+        7,    2,    3,   15,   11,    6,   14,   44,   16,   38,
+        9,   26,   12,   27,   46,   46,   46,    4,    5,   46,
+       46,   46,   46,   46,   46,   46,   46,   46,   46,   46,
+        1,    1,   36,    0,    0,   38,   13,   46,   46,   46,
+       29,   46,   46,   46,   46,   46,   46,   46,   46,   34,
+       46,   46,   46,   46,   46,   46,   46,    1,    0,   37,
+       46,   20,   46,   21,   23,   46,   46,   46,   31,   46,
+       46,    0,   39,   46,   46,   46,   46,   41,   38,    0,
+       46,   42,   35,   46,   46,   18,   46,    0,   46,   46,
 
+       24,   25,    0,   22,   19,   40,   46,    0,   46,   33,
+       37,   28,    0,   46,    0,   46,   32,   46,   46,   46,
+        0,    0,    0,    0,    0,    0,   30,    0
     } ;
 
 static yyconst int yy_ec[256] =
@@ -304,17 +307,17 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    4,    1,    5,    6,    1,    7,    5,    1,    8,
-        9,   10,   11,   12,   13,   14,   15,   16,   16,   16,
-       16,   16,   16,   16,   16,   16,   16,   17,    1,    5,
-       18,    5,    1,    1,   19,   19,   19,   19,   19,   19,
-       19,   19,   20,   19,   19,   19,   19,   19,   19,   19,
-       19,   19,   19,   19,   19,   19,   19,   19,   19,   19,
-       21,    1,   22,    1,    5,    1,   23,   24,   25,   26,
+        1,    4,    1,    5,    6,    1,    7,    1,    8,    9,
+       10,   11,   12,   13,   14,   15,   16,   17,   17,   18,
+       17,   17,   17,   17,   17,   17,   17,   19,    1,   20,
+       21,   22,    1,    1,   23,   23,   23,   23,   23,   23,
+       23,   23,   24,   23,   23,   25,   23,   23,   23,   26,
+       23,   23,   23,   23,   23,   23,   23,   23,   23,   23,
+       27,    1,   28,    1,   29,    1,   30,   31,   32,   33,
 
-       27,   28,   29,   30,   31,   26,   26,   32,   33,   34,
-       35,   36,   26,   37,   38,   39,   40,   26,   26,   26,
-       41,   26,    1,    1,    1,    1,    1,    1,    1,    1,
+       34,   35,   36,   37,   38,   37,   37,   39,   40,   41,
+       42,   43,   37,   44,   45,   46,   47,   48,   37,   37,
+       49,   50,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -331,85 +334,103 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst int yy_meta[42] =
+static yyconst int yy_meta[51] =
     {   0,
-        1,    1,    1,    1,    2,    1,    1,    1,    1,    1,
-        2,    1,    2,    1,    1,    2,    1,    1,    2,    2,
-        1,    1,    2,    2,    2,    2,    2,    2,    2,    2,
-        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
-        2
+        1,    1,    2,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    3,    3,    1,    1,
+        1,    1,    3,    3,    3,    3,    1,    1,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3
     } ;
 
-static yyconst short int yy_base[94] =
+static yyconst short int yy_base[131] =
     {   0,
-        0,  104,  109,  111,  111,  111,  111,  111,   31,  111,
-      111,  111,  111,  111,  111,  111,   29,  111,  111,   74,
-      111,  111,   69,   71,   75,    0,   14,   14,   81,   63,
-       99,   85,   84,   36,   60,    0,    0,   63,   74,   61,
-       58,   58,   89,   53,   58,   87,  111,   42,   73,  111,
-       56,   50,   63,    0,   50,   47,   47,   46,  111,   65,
-        0,    0,   41,   42,   55,   45,   35,   44,    0,   36,
-       40,   38,    0,  111,    0,   43,   32,   43,   37,  111,
-       37,   43,   52,   29,   23,   27,   27,   22,   16,  111,
-      111,   52,   60
+        0,   49,  158,  159,  159,  159,  159,  159,    0,  159,
+      159,   40,  159,  159,  159,  159,  159,  159,  159,   40,
+      159,  159,  136,  159,    0,  116,  131,  159,  159,  109,
+      111,  104,  117,  111,   21,   21,  119,  101,  104,   26,
+       64,   65,    0,   53,   56,   60,  159,    0,  116,  120,
+        0,  102,  125,  107,   96,   99,   97,   94,   95,    0,
+       93,   72,   89,   94,   99,   82,   87,   77,   70,   65,
+       94,    0,   90,    0,    0,   94,   97,   96,    0,   85,
+       82,   79,    0,   79,   77,   76,   82,    0,  159,   72,
+       81,    0,    0,   75,   67,    0,   68,   81,   71,   60,
 
+        0,    0,   74,    0,    0,    0,   62,   66,   64,    0,
+      159,    0,   69,   58,   69,   63,  159,   63,   69,   84,
+       55,   48,   53,   56,   52,   47,  159,  159,  118,   83
     } ;
 
-static yyconst short int yy_def[94] =
+static yyconst short int yy_def[131] =
     {   0,
-       91,    1,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   92,   92,   92,   92,   92,   92,   92,   92,
-       93,   91,   91,   91,   91,   92,   92,   92,   92,   92,
-       92,   92,   92,   92,   92,   93,   91,   91,   91,   91,
-       92,   92,   92,   92,   92,   91,   92,   92,   91,   91,
-       92,   92,   92,   92,   91,   92,   92,   91,   92,   92,
-       91,   92,   92,   91,   92,   91,   92,   91,   92,   91,
-       92,   92,   92,   91,   91,   91,   91,   91,   91,   91,
-        0,   91,   91
+      128,    1,  128,  128,  128,  128,  128,  128,  129,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  130,  130,  130,  128,  128,  130,
+      130,  130,  130,  130,  130,  130,  130,  130,  130,  130,
+      128,  128,  129,  128,  128,  128,  128,  130,  130,  130,
+      130,  130,  130,  130,  130,  130,  130,  130,  130,  130,
+      130,  130,  130,  130,  130,  130,  130,  128,  128,  128,
+      130,  130,  130,  130,  130,  130,  130,  130,  130,  130,
+      130,  128,  130,  130,  130,  130,  130,  130,  128,  128,
+      130,  130,  130,  130,  130,  130,  130,  128,  130,  130,
 
+      130,  130,  128,  130,  130,  130,  130,  128,  130,  130,
+      128,  130,  128,  130,  128,  130,  128,  130,  130,  130,
+      128,  128,  128,  128,  128,  128,  128,    0,  128,  128
     } ;
 
-static yyconst short int yy_nxt[153] =
+static yyconst short int yy_nxt[210] =
     {   0,
-        4,    5,    6,    7,    4,    4,    8,    9,   10,   11,
-       12,   13,   14,   15,   16,   17,   18,   19,    4,   20,
-       21,   22,   23,   24,   25,   26,   26,   27,   26,   26,
-       28,   26,   29,   30,   26,   26,   26,   26,   26,   26,
-       26,   32,   33,   32,   34,   40,   42,   43,   41,   33,
-       59,   34,   74,   36,   90,   60,   89,   48,   88,   68,
-       46,   46,   87,   86,   85,   84,   83,   82,   81,   80,
-       79,   78,   77,   76,   75,   73,   72,   71,   70,   69,
-       68,   67,   66,   65,   64,   63,   62,   61,   49,   47,
-       58,   57,   56,   55,   54,   53,   52,   51,   50,   49,
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       14,   15,   16,   17,   18,   19,   20,   20,   21,   22,
+       23,   24,   25,   26,   25,   27,   28,   29,    4,   30,
+       31,   32,   33,   34,   35,   25,   25,   36,   25,   37,
+       38,   39,   25,   25,   40,   25,   25,   25,   25,   25,
+       41,   44,   42,   44,   45,   60,   46,   46,   56,   57,
+       61,   62,   58,   66,   59,   68,   68,   68,   68,   69,
+       69,   67,   70,   70,   45,   82,   46,   46,   68,   89,
+       68,   70,   70,  111,   90,   48,   69,   69,  103,  103,
+      103,  103,  127,  126,  125,  124,  123,  122,  121,  120,
 
-       48,   47,   45,   44,   39,   38,   37,   35,   91,   31,
-        3,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91
+      119,  118,  117,  116,  115,  114,  113,  112,  110,  109,
+      108,  107,  106,  105,  104,  102,  101,   83,   43,  100,
+       43,   99,   98,   97,   96,   95,   94,   93,   92,   91,
+       88,   87,   86,   85,   84,   81,   80,   79,   78,   77,
+       76,   75,   74,   73,   72,   71,   65,   64,   63,   55,
+       54,   53,   52,   51,   50,   49,   47,  128,    3,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+
+      128,  128,  128,  128,  128,  128,  128,  128,  128
     } ;
 
-static yyconst short int yy_chk[153] =
+static yyconst short int yy_chk[210] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    9,   17,    9,   17,   27,   28,   28,   27,   34,
-       48,   34,   68,   92,   89,   48,   88,   48,   87,   68,
-       93,   93,   86,   85,   84,   83,   82,   81,   79,   78,
-       77,   76,   72,   71,   70,   67,   66,   65,   64,   63,
-       60,   58,   57,   56,   55,   53,   52,   51,   49,   46,
-       45,   44,   43,   42,   41,   40,   39,   38,   35,   33,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        2,   12,    2,   12,   20,   36,   20,   20,   35,   35,
+       36,   36,   35,   40,   35,   41,   42,   41,   42,   44,
+       44,   40,   45,   45,   46,   62,   46,   46,   68,   69,
+       68,   70,   70,  103,   69,  130,   69,   69,   90,   90,
+      103,  103,  126,  125,  124,  123,  122,  121,  120,  119,
 
-       32,   31,   30,   29,   25,   24,   23,   20,    3,    2,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91,   91,   91,   91,   91,   91,   91,   91,   91,
-       91,   91
+      118,  116,  115,  114,  113,  109,  108,  107,  100,   99,
+       98,   97,   95,   94,   91,   87,   86,   62,  129,   85,
+      129,   84,   82,   81,   80,   78,   77,   76,   73,   71,
+       67,   66,   65,   64,   63,   61,   59,   58,   57,   56,
+       55,   54,   53,   52,   50,   49,   39,   38,   37,   34,
+       33,   32,   31,   30,   27,   26,   23,    3,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+      128,  128,  128,  128,  128,  128,  128,  128,  128,  128,
+
+      128,  128,  128,  128,  128,  128,  128,  128,  128
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -428,13 +449,14 @@ char *yytext;
 #line 3 "lexical.l"
 #include <stdlib.h>
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 #include "syntax.tab.h"
 
-extern int nb_col= 1,nb_ligne=1;
-// extern YYSTYPE yylval;
 
-#line 438 "lex.yy.c"
+extern int nb_col= 1,nb_ligne=1;
+int cur_line_tab = 0;   /* indentation of the current line */
+int tab_level = 0;          /* indentation level passed to the parser */
+#line 460 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -588,9 +610,11 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 23 "lexical.l"
+#line 30 "lexical.l"
 
-#line 594 "lex.yy.c"
+
+
+#line 618 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -642,13 +666,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 92 )
+				if ( yy_current_state >= 129 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 111 );
+		while ( yy_base[yy_current_state] != 159 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -676,170 +700,245 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 24 "lexical.l"
-{printf("\n Sep_ParOuvrante reconnu \n"); nb_col += yyleng;   return (token_ParOuvrante);}
+#line 33 "lexical.l"
+{ printf("\n ------------------------------------ Indent \n"); cur_line_tab++; nb_col += yyleng; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 25 "lexical.l"
-{printf("\n Sep_ParFermante reconnu \n"); nb_col += yyleng;   return (token_ParFermante);}
+#line 38 "lexical.l"
+{printf("\n Sep_ParOuvrante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_ParOuvrante);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 26 "lexical.l"
-{printf("\n Sep_CrochOuvrante reconnu \n"); nb_col += yyleng; return (token_CrochOuvrante);}
+#line 39 "lexical.l"
+{printf("\n Sep_ParFermante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_ParFermante);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 27 "lexical.l"
-{printf("\n Sep_CrochFermante reconnu \n"); nb_col += yyleng; return (token_CrochFermante);}
+#line 40 "lexical.l"
+{printf("\n Sep_CrochOuvrante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CrochOuvrante);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 28 "lexical.l"
-{printf("\n Sep_virgule reconnu \n"); nb_col += yyleng;       return (token_virgule);}
+#line 41 "lexical.l"
+{printf("\n Sep_CrochFermante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CrochFermante);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 29 "lexical.l"
-{printf("\n Sep_Deux_Points reconnu \n"); nb_col += yyleng;   return (token_Deux_Points);}
+#line 42 "lexical.l"
+{printf("\n Sep_virgule reconnu \n"); nb_col += yyleng;                 find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_virgule);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 30 "lexical.l"
-{printf("\n Sep_Pourcentage reconnu \n"); nb_col += yyleng;   return (token_Pourcentage);}
+#line 43 "lexical.l"
+{printf("\n Sep_gui1 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_gui1); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 31 "lexical.l"
-{printf("\n Sep_Add reconnu \n"); nb_col += yyleng;           return (token_Add);}
+#line 44 "lexical.l"
+{printf("\n Sep_gui2 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_gui2);  }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 32 "lexical.l"
-{printf("\n Sep_equal reconnu \n"); nb_col += yyleng;           return (token_Add);}
+#line 45 "lexical.l"
+{printf("\n Sep_Deux_Points reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Deux_Points);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 33 "lexical.l"
-{printf("\n Sep_Sub reconnu \n"); nb_col += yyleng;           return (token_Sub);}
+#line 46 "lexical.l"
+{printf("\n Sep_Pourcentage reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Pourcentage);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 34 "lexical.l"
-{printf("\n Sep_Mult reconnu \n"); nb_col += yyleng;          return (token_Mult);}
+#line 47 "lexical.l"
+{printf("\n Sep_Add reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Add);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 35 "lexical.l"
-{printf("\n Sep_Div reconnu \n"); nb_col += yyleng;           return (token_Div);}
+#line 48 "lexical.l"
+{printf("\n Sep_equal reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_equal);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 36 "lexical.l"
-{printf("\n Sep_tab reconnu \n"); nb_col += yyleng;           return (token_Tab);}
+#line 49 "lexical.l"
+{printf("\n Sep_double_equal reconnu \n"); nb_col += yyleng;            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_test_equal);      }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 37 "lexical.l"
-{printf("\n Mc_import reconnu \n");nb_col += yyleng;               return (token_import);}
+#line 50 "lexical.l"
+{printf("\n Sep_Sub reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Sub);}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 38 "lexical.l"
-{printf("\n Mc_as reconnu \n");nb_col += yyleng;               return (token_as);}
+#line 51 "lexical.l"
+{printf("\n Sep_Mult reconnu \n"); nb_col += yyleng;                    find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Mult);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 39 "lexical.l"
-{printf("\n Mc_matplot reconnu \n");nb_col += yyleng;               return (token_matplotlib);}
+#line 52 "lexical.l"
+{printf("\n Sep_Div reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Div);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 40 "lexical.l"
-{printf("\n Mc_for reconnu \n");nb_col += yyleng;               return (token_for);}
+#line 53 "lexical.l"
+{printf("\n Sep_tab reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Tabulation);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 41 "lexical.l"
-{printf("\n Mc_inrange reconnu \n");nb_col += yyleng;               return (token_in_range);}
+#line 54 "lexical.l"
+{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_From);}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 42 "lexical.l"
-{printf("\n Mc_numpy reconnu \n");nb_col += yyleng;               return (token_numpy);}
+#line 55 "lexical.l"
+{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Final);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 43 "lexical.l"
-{printf("\n Comment reconnu \n");nb_col += yyleng;      return (token_comment);} 
+#line 56 "lexical.l"
+{printf("\n Mc_PIL reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Pil);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 44 "lexical.l"
-{printf("\n CST_REAL reconnu \n");nb_col += yyleng; return (token_CST_REAL);}
+#line 57 "lexical.l"
+{printf("\n Mc_cv2 reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_cv2);}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 45 "lexical.l"
-{printf("\n CST_INT reconnu \n");nb_col += yyleng; return (token_CST_INT);}
+#line 58 "lexical.l"
+{printf("\n Mc_Image reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Image);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 46 "lexical.l"
-{printf("\n nombre reconnu \n");nb_col += yyleng; return (token_Nombre);}
+#line 59 "lexical.l"
+{printf("\n Mc_def reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Def);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 47 "lexical.l"
-{printf("\n Mc_Int reconnu \n");nb_col += yyleng;       return (token_int);}
+#line 60 "lexical.l"
+{printf("\n Mc_open reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Open);} 
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 48 "lexical.l"
-{printf("\n Mc_FLOAT reconnu \n");nb_col += yyleng;      return (token_float);}
+#line 61 "lexical.l"
+{printf("\n Mc_size reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Size);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 49 "lexical.l"
-{printf("\n Mc_CHAR reconnu \n"); nb_col += yyleng;       return (token_char);}
+#line 62 "lexical.l"
+{printf("\n Mc_inf reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_inf);}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 50 "lexical.l"
-{printf("\n Mc_STRING reconnu \n"); nb_col += yyleng;       return (token_string);}
+#line 63 "lexical.l"
+{printf("\n Mc_sup reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_sup);}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 51 "lexical.l"
-{printf("\n Saut_ligne reconnu \n");nb_ligne++; nb_col=1;}
+#line 64 "lexical.l"
+{printf("\n Mc_import reconnu \n");nb_col += yyleng;                    find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_import);}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 52 "lexical.l"
-{printf("\n point reconnu \n");nb_col++;}
+#line 65 "lexical.l"
+{printf("\n Mc_as reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_as);}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 53 "lexical.l"
-{ nb_col++;}
+#line 66 "lexical.l"
+{printf("\n Mc_matplot reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_matplotlib);}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 54 "lexical.l"
-{printf("Erreur lexicale au niveau de la ligne %d et colone %d \n",nb_ligne, nb_col); nb_col++;  }
+#line 67 "lexical.l"
+{printf("\n Mc_for reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_for);}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 55 "lexical.l"
-{printf("\n IDF reconnu \n");nb_col += yyleng;      return (token_idf);}
+#line 68 "lexical.l"
+{printf("\n Mc_inrange reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_in_range);}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 58 "lexical.l"
+#line 69 "lexical.l"
+{printf("\n Mc_numpy reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_numpy);}
+	YY_BREAK
+case 34:
+YY_RULE_SETUP
+#line 70 "lexical.l"
+{printf("\n Mc_if reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_if);         }
+	YY_BREAK
+case 35:
+YY_RULE_SETUP
+#line 71 "lexical.l"
+{printf("\n Mc_else reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_else);            }
+	YY_BREAK
+case 36:
+YY_RULE_SETUP
+#line 72 "lexical.l"
+{printf("\n Comment reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_comment);} 
+	YY_BREAK
+case 37:
+YY_RULE_SETUP
+#line 73 "lexical.l"
+{printf("\n CST_REAL reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_REAL);}
+	YY_BREAK
+case 38:
+YY_RULE_SETUP
+#line 74 "lexical.l"
+{printf("\n CST_INT reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_INT);}
+	YY_BREAK
+case 39:
+YY_RULE_SETUP
+#line 75 "lexical.l"
+{printf("\n Mc_Int reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_int);}
+	YY_BREAK
+case 40:
+YY_RULE_SETUP
+#line 76 "lexical.l"
+{printf("\n Mc_FLOAT reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_float);}
+	YY_BREAK
+case 41:
+YY_RULE_SETUP
+#line 77 "lexical.l"
+{printf("\n Mc_CHAR reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);   return (token_char);}
+	YY_BREAK
+case 42:
+YY_RULE_SETUP
+#line 78 "lexical.l"
+{printf("\n Mc_STRING reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_string);}
+	YY_BREAK
+case 43:
+YY_RULE_SETUP
+#line 79 "lexical.l"
+{printf("\n Saut_ligne reconnu %d \n",nb_ligne); nb_ligne++; nb_col=1;  find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_retour); }
+	YY_BREAK
+case 44:
+YY_RULE_SETUP
+#line 80 "lexical.l"
+{printf("\n point reconnu \n");nb_col++;                                find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_point);}
+	YY_BREAK
+case 45:
+YY_RULE_SETUP
+#line 81 "lexical.l"
+{ nb_col++; }
+	YY_BREAK
+case 46:
+YY_RULE_SETUP
+#line 82 "lexical.l"
+{printf("\n IDF reconnu \n");nb_col += yyleng;                          find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_idf);}
+	YY_BREAK
+case 47:
+YY_RULE_SETUP
+#line 83 "lexical.l"
+{printf("Erreur lexicale au niveau de la ligne %d et colone %d \n",nb_ligne, nb_col); nb_col++;  }
+	YY_BREAK
+case 48:
+YY_RULE_SETUP
+#line 84 "lexical.l"
 ECHO;
 	YY_BREAK
-#line 843 "lex.yy.c"
+#line 942 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1132,7 +1231,7 @@ static yy_state_type yy_get_previous_state()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 92 )
+			if ( yy_current_state >= 129 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1167,11 +1266,11 @@ yy_state_type yy_current_state;
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 92 )
+		if ( yy_current_state >= 129 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 91);
+	yy_is_jam = (yy_current_state == 128);
 
 	return yy_is_jam ? 0 : yy_current_state;
 	}
@@ -1727,7 +1826,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 58 "lexical.l"
+#line 84 "lexical.l"
 
 
 

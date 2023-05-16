@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Code/1-Main-Codes/S2/Compil/projet-compil",
-      "program": "c:/Code/1-Main-Codes/S2/Compil/projet-compil/build/Debug/outDebug",
+      "cwd": "c:/Code/1-Main-Codes/Github/MiniVision-Projet",
+      "program": "c:/Code/1-Main-Codes/Github/MiniVision-Projet/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

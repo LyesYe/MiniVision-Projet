@@ -1,5 +1,9 @@
 cls
 del lex.yy.c
+del syntax.tab.c
+del syntax.tab.h
+del prog.exe
 flex lexical.l
-gcc lex.yy.c -lfl -o prog
-prog.exe<test.txt
+bison -d syntax.y
+gcc lex.yy.c syntax.tab.c table_symbole.c -lfl -ly -o prog
+prog<test.txt

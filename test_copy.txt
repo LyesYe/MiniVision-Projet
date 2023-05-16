@@ -1,0 +1,31 @@
+from PIL import Image
+
+def binarize_image(image_path, threshold):
+    # Charger l'image en niveaux de gris
+    # Test comment
+    image = Image.open(image_path).convert('L')
+
+    # Obtenir les dimensions de l'image
+    width, height = image.size
+
+    # Initialiser une nouvelle image avec les mêmes dimensions que l'image d'origine
+    binary_image = Image.new('1', (width, height))
+
+    # Obtenir les données de l'image sous forme de pixels
+    pixels = image.load()
+    binary_pixels = binary_image.load()
+
+    # Parcourir tous les pixels de l'image et les binariser
+    for x in range(width):
+        for y in range(height):
+            if pixels[x, y] < threshold:
+                binary_pixels[x, y] = 0
+            else:
+                binary_pixels[x, y] = 1
+
+    # Retourner l'image binaire
+    return binary_image
+
+
+binary_image = binarize_image('image.png', 128)
+binary_image.show()

@@ -1,11 +1,30 @@
-import numpy as np 
-import matplotlib.pyplot as plt 
-echiquier_array = np.zeros([200, 200], dtype = np.uint8) 
-for x in range(200): 
-    for y in range(200): 
-        if (x % 50) // 25 == (y % 50) // 25: 
-            echiquier_array[x, y] = 0 
-        else: 
-            echiquier_array[x, y] = 255 
-plt.imshow(echiquier_array, cmap='Greys_r') 
-plt.show()
+import cv2
+import numpy as np
+from PIL import Image
+from PIL import Image as pp
+
+a = 12 + 12
+a = 12 - 12
+a = 12 / 12
+a = 12 * 12
+a = ()
+a = (12)
+a = "hello"
+a = 'lyes'
+a = start()
+a = []
+a = tab[]
+
+kol : int
+kol : str
+kol : bool
+kol : float
+
+kol : int = 12
+kol : str = 12
+kol : bool = 12
+kol : float = 12
+kol : final float = 12
+
+def binarize_image(image_path , threshold):
+    kol : int = 12

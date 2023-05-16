@@ -44,32 +44,67 @@
      token_CrochOuvrante = 260,
      token_CrochFermante = 261,
      token_virgule = 262,
-     token_Deux_Points = 263,
-     token_Pourcentage = 264,
-     token_Add = 265,
-     token_Sub = 266,
-     token_Mult = 267,
-     token_Div = 268,
-     token_Tab = 269,
-     token_import = 270,
-     token_as = 271,
-     token_matplotlib = 272,
-     token_for = 273,
-     token_in_range = 274,
-     token_numpy = 275,
-     token_comment = 276,
-     token_int = 277,
-     token_float = 278,
-     token_char = 279,
-     token_idf = 280,
-     token_string = 281
+     token_gui1 = 263,
+     token_gui2 = 264,
+     token_Deux_Points = 265,
+     token_Final = 266,
+     token_test_equal = 267,
+     token_Tabulation = 268,
+     token_From = 269,
+     token_Pil = 270,
+     token_Image = 271,
+     token_Def = 272,
+     token_Open = 273,
+     token_Size = 274,
+     token_import = 275,
+     token_as = 276,
+     token_matplotlib = 277,
+     token_for = 278,
+     token_in_range = 279,
+     token_numpy = 280,
+     token_if = 281,
+     token_else = 282,
+     token_comment = 283,
+     token_CST_REAL = 284,
+     token_CST_INT = 285,
+     token_int = 286,
+     token_float = 287,
+     token_char = 288,
+     token_string = 289,
+     token_idf = 290,
+     token_retour = 291,
+     token_point = 292,
+     token_cv2 = 293,
+     token_equal = 294,
+     token_sup = 295,
+     token_inf = 296,
+     token_Mult = 297,
+     token_Div = 298,
+     token_Pourcentage = 299,
+     token_Sub = 300,
+     token_Add = 301
    };
 #endif
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+typedef union YYSTYPE
+{
+
+/* Line 1676 of yacc.c  */
+#line 13 "syntax.y"
+
+	int entier;
+	char* str;
+	float reel;
+
+
+
+
+/* Line 1676 of yacc.c  */
+#line 107 "syntax.tab.h"
+} YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
