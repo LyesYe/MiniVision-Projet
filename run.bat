@@ -6,4 +6,4 @@ del prog.exe
 flex lexical.l
 bison -d syntax.y
 gcc lex.yy.c syntax.tab.c table_symbole.c -lfl -ly -o prog
-prog<test.txt
+prog<test_copy.txt

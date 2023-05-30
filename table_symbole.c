@@ -20,7 +20,6 @@ int hash_function(char *chaine)
     for (i = 0 ; chaine[i] != '\0' ; i++)
         hash_result += chaine[i];
 
-    printf("\n****************************************************************Recherche dedans la table des symboles...\n");
 
     hash_result %= TAILLE;
     return hash_result;
@@ -29,6 +28,8 @@ int hash_function(char *chaine)
 // Fonction qui ajoute un élement dans la table de hashage
 void insert_hash(char name[], char type[], char code[], float val,int array,int dim)
 {
+    printf("\n --- Insertion de l'entite : | %s | ... \n",name);
+
     int hashed_name = hash_function(name);
 
     Element* current_element = table_symbole[hashed_name];
@@ -50,27 +51,29 @@ void insert_hash(char name[], char type[], char code[], float val,int array,int 
         return;
     }
 
-    table_symbole[hashed_name] = new_element;
+    table_symbole[hashed_name] = new_element; 
 }
 
 // Fonction qui recherge un identifiant dans une liste de hashage
 void find_hash(char name[], char code[], char type[], float val,int array,int dim)
 {
-    printf("\n**************************************************************** to hash = %s \n",name);
+    
 
     int hashed_name = hash_function(name);
+
     Element* current_element = table_symbole[hashed_name];
 
     while (current_element != NULL && (strcmp(name, current_element->name) != 0))
         current_element = current_element->suiv;
 
+    
     if (current_element == NULL) {
-        printf("\nAjout de %s dans la table des symboles...\n",name);
+        printf("\n --- The Entity | %s | was found ? %s \n",name,current_element);
         insert_hash(name, type, code, val,array,dim);
         return;
     }
     
-    printf("\nEntite existante : %s ... \n",name);
+    printf("\n --- Entite existante : | %s | ... \n",name);
 }
 
 // Fonction qui affiche la table des symboles

@@ -1,4 +1,6 @@
 from PIL import Image
+from PIL import Image
+
 
 def binarize_image(image_path, threshold):
     # Charger l'image en niveaux de gris
@@ -18,8 +20,8 @@ def binarize_image(image_path, threshold):
     # Parcourir tous les pixels de l'image et les binariser
     for x in range(width):
         for y in range(height):
-            if pixels[x, y] < threshold:
-                binary_pixels[x, y] = 0
+            if pixels[x,y] < threshold:
+                binary_pixels[x,y] = 0
             else:
                 binary_pixels[x, y] = 1
 

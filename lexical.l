@@ -59,6 +59,14 @@ indent ^[ \t]+
 "def"                       {printf("\n Mc_def reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Def);}
 "open"                      {printf("\n Mc_open reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Open);} 
 "size"                      {printf("\n Mc_size reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Size);}
+"load"                      {printf("\n Mc_load reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_load);}
+"resize"                      {printf("\n Mc_resize reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_resize);}
+"save"                      {printf("\n Mc_save reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_save);}
+"show"                      {printf("\n Mc_show reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_show);}
+"close"                      {printf("\n Mc_close reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_close);}
+"convert"                      {printf("\n Mc_convert reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_convert);}
+"new"                      {printf("\n Mc_new reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_new);}
+"png"                      {printf("\n Mc_png reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_png);}
 "<"                         {printf("\n Mc_inf reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_inf);}
 ">"                         {printf("\n Mc_sup reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_sup);}
 "import"                    {printf("\n Mc_import reconnu \n");nb_col += yyleng;                    find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_import);}
@@ -69,6 +77,7 @@ indent ^[ \t]+
 "numpy"                     {printf("\n Mc_numpy reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_numpy);}
 "if"                        {printf("\n Mc_if reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_if);         }
 "else"                      {printf("\n Mc_else reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_else);            }
+"return"                      {printf("\n Mc_return reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_return);            }
 {comment}                   {printf("\n Comment reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_comment);} 
 {CST_REAL}                  {printf("\n CST_REAL reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_REAL);}
 {CST_INT}                   {printf("\n CST_INT reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_INT);}
