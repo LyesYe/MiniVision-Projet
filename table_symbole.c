@@ -6,6 +6,7 @@
 
 // Table de hashage
 int TAILLE = 1000;
+Element* table_symbole_MC[1000];
 Element* table_symbole[1000];
 
 
@@ -26,54 +27,104 @@ int hash_function(char *chaine)
 }
 
 // Fonction qui ajoute un élement dans la table de hashage
-void insert_hash(char name[], char type[], char code[], float val,int array,int dim)
+void insert_hash(char name[], char type[], char code[], float val,int array,int dim , int typo)
 {
-    printf("\n --- Insertion de l'entite : | %s | ... \n",name);
+    if (typo == 1){
+        printf("\n --- Insertion de l'entite : | %s | ... \n",name);
 
-    int hashed_name = hash_function(name);
+        int hashed_name = hash_function(name);
 
-    Element* current_element = table_symbole[hashed_name];
-    Element* new_element = (Element*)malloc(sizeof(Element));  
-    
-    strcpy(new_element->name, name);
-    strcpy(new_element->type, type);
-    strcpy(new_element->code, code);
+        Element* current_element = table_symbole[hashed_name];
+        Element* new_element = (Element*)malloc(sizeof(Element));  
+        
+        strcpy(new_element->name, name);
+        strcpy(new_element->type, type);
+        strcpy(new_element->code, code);
 
-    new_element->value = val;
-    new_element->is_array = array;
-    new_element->dimension = dim;
-    new_element->suiv = NULL;
+        new_element->value = val;
+        new_element->is_array = array;
+        new_element->dimension = dim;
+        new_element->suiv = NULL;
 
-    if (current_element) {
-        while(current_element->suiv)
-            current_element = current_element->suiv;
-        current_element->suiv = new_element;
-        return;
+        if (current_element) {
+            while(current_element->suiv)
+                current_element = current_element->suiv;
+            current_element->suiv = new_element;
+            return;
+        }
+
+        table_symbole[hashed_name] = new_element; 
     }
+    else{
+        printf("\n --- Insertion de l'entite : | %s | ... \n",name);
 
-    table_symbole[hashed_name] = new_element; 
+        int hashed_name = hash_function(name);
+
+        Element* current_element = table_symbole_MC[hashed_name];
+        Element* new_element = (Element*)malloc(sizeof(Element));  
+        
+        strcpy(new_element->name, name);
+        strcpy(new_element->type, type);
+        strcpy(new_element->code, code);
+
+        new_element->value = val;
+        new_element->is_array = array;
+        new_element->dimension = dim;
+        new_element->suiv = NULL;
+
+        if (current_element) {
+            while(current_element->suiv)
+                current_element = current_element->suiv;
+            current_element->suiv = new_element;
+            return;
+        }
+
+        table_symbole_MC[hashed_name] = new_element; 
+    }
 }
 
 // Fonction qui recherge un identifiant dans une liste de hashage
-void find_hash(char name[], char code[], char type[], float val,int array,int dim)
+void find_hash(char name[], char code[], char type[], int val,int array,int dim,int typo)
 {
-    
+    printf("|||||||||||||||||||||||||||||| %d ||||||||||||||||||||||||||||||  ",val);
 
     int hashed_name = hash_function(name);
 
-    Element* current_element = table_symbole[hashed_name];
+    if (typo == 1){
 
-    while (current_element != NULL && (strcmp(name, current_element->name) != 0))
-        current_element = current_element->suiv;
+        printf("\n |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n");
 
-    
-    if (current_element == NULL) {
-        printf("\n --- The Entity | %s | was found ? %s \n",name,current_element);
-        insert_hash(name, type, code, val,array,dim);
-        return;
+        Element* current_element = table_symbole[hashed_name];
+
+        while (current_element != NULL && (strcmp(name, current_element->name) != 0))
+            current_element = current_element->suiv;
+
+        
+        if (current_element == NULL) {
+            printf("\n --- The Entity | %s | was found ? %s \n",name,current_element);
+            insert_hash(name, type, code, val,array,dim,typo);
+            return;
+        }
+        
+        printf("\n --- Entite existante : | %s | ... \n",name);
     }
-    
-    printf("\n --- Entite existante : | %s | ... \n",name);
+    else {
+
+        
+         Element* current_element = table_symbole_MC[hashed_name];
+
+        while (current_element != NULL && (strcmp(name, current_element->name) != 0))
+            current_element = current_element->suiv;
+
+        
+        if (current_element == NULL) {
+            printf("\n --- The Entity | %s | was found ? %s \n",name,current_element);
+            insert_hash(name, type, code, val,array,dim,typo);
+            return;
+        }
+        
+        printf("\n --- Entite existante : | %s | ... \n",name);
+    }
 }
 
 // Fonction qui affiche la table des symboles
@@ -93,7 +144,7 @@ void show_ts()
         Element* current_element = table_symbole[i];
         while (current_element)
         {
-            if (strcmp(current_element->code, "CONST") == 0 && (strcmp(current_element->type, "FLOAT") == 0 || strcmp(current_element->type, "INT") == 0))
+            if (strcmp(current_element->code, "CONST") == 0 && (strcmp(current_element->type, "float") == 0 || strcmp(current_element->type, "int") == 0))
                 printf("\t|%14s    |%10s     | %10s     | %10f \t\n", current_element->name, current_element->code, current_element->type, current_element->value);
             else
                 printf("\t|%14s    |%10s     | %10s     | \t\n", current_element->name, current_element->code, current_element->type);
@@ -102,4 +153,22 @@ void show_ts()
         }
     }
   
+
+    printf("\n\n\n\n/*************** Table des symboles mots cles *************/\n");
+    printf("_____________________________________________________\n");
+    printf("\t| 	 Nom_Entite        |   CodeEntite   | \n");
+    printf("_____________________________________________________\n");
+
+    for(i=0;i<TAILLE;i++){
+
+
+        Element* current_element2 = table_symbole_MC[i];
+        while (current_element2)
+        {
+            printf("\t|%25s |%12s    | \n", current_element2->name, current_element2->code);
+            current_element2 = current_element2->suiv;
+        }
+
+    }
+
 }

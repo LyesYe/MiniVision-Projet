@@ -90,6 +90,7 @@ Fun :
 
 idfImage :
         token_idf token_point token_png
+        ;
 
 
 // Declarations Part -----------------------------------------------------------
@@ -104,7 +105,6 @@ Untyped_declaration :
                 |token_idf token_CrochOuvrante Expression token_CrochFermante token_equal Expression
                 |idfSuite token_equal FunExpression
                 |FunExpression
-
                 ;
 
 
@@ -168,7 +168,6 @@ PointFunExp :
 
 ReturnInst : 
                  token_return Expression
-                |token_return token_idf
                 ;
 
 
@@ -178,7 +177,7 @@ ReturnInst :
 instructions_part : 
                  Function_instruction
                 |token_comment
-                |Loop_instruction
+                |Loop_instruction 
                 |Condition_instruction
                 ;
 
@@ -193,7 +192,6 @@ Params :
                  Expression token_virgule Params
                 |token_idf token_virgule Params
                 |Expression
-                |token_idf
                 ;
 
 Loop_instruction : 
@@ -216,6 +214,11 @@ TestExpressions :
 
 %%
 
+
+
+
+
+
 int main()
 {
     yyparse();
@@ -223,8 +226,11 @@ int main()
     return 0;
 }
 
-int yyerror(const char *msg)
+
+
+int yyerror(char* msg) 
 {
-    printf("Error: %s\n", msg);
-    return 0;
+	printf("Erreur Syntaxique: %s, Ligne ( %d ) & column ( %d ), entite lexicale (%s) \n", msg, nb_ligne, nb_col, yylval.str);
+
+	return 1;
 }

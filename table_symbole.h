@@ -14,8 +14,8 @@ typedef struct Element
 
 int hash_function(char *chaine);
 
-void insert_hash(char name[], char type[], char code[], float val,int array,int dim);
+void insert_hash(char name[], char type[], char code[], float val,int array,int dim,int typo);
 
-void find_hash(char name[], char code[], char type[], float val,int array,int dim);
+void find_hash(char name[], char code[], char type[], int val,int array,int dim,int typo);
 
 void show_ts();

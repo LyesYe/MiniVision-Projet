@@ -727,262 +727,262 @@ YY_RULE_SETUP
 case 2:
 YY_RULE_SETUP
 #line 38 "lexical.l"
-{printf("\n Sep_ParOuvrante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_ParOuvrante);}
+{printf("\n Sep_ParOuvrante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_ParOuvrante);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 39 "lexical.l"
-{printf("\n Sep_ParFermante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_ParFermante);}
+{printf("\n Sep_ParFermante reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_ParFermante);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 40 "lexical.l"
-{printf("\n Sep_CrochOuvrante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CrochOuvrante);}
+{printf("\n Sep_CrochOuvrante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_CrochOuvrante);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 41 "lexical.l"
-{printf("\n Sep_CrochFermante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CrochFermante);}
+{printf("\n Sep_CrochFermante reconnu \n"); nb_col += yyleng;           find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_CrochFermante);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
 #line 42 "lexical.l"
-{printf("\n Sep_virgule reconnu \n"); nb_col += yyleng;                 find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_virgule);}
+{printf("\n Sep_virgule reconnu \n"); nb_col += yyleng;                 find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_virgule);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 43 "lexical.l"
-{printf("\n Sep_gui1 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_gui1); }
+{printf("\n Sep_gui1 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_gui1); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 44 "lexical.l"
-{printf("\n Sep_gui2 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_gui2);  }
+{printf("\n Sep_gui2 \n"); nb_col += yyleng;                            find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_gui2);  }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 45 "lexical.l"
-{printf("\n Sep_Deux_Points reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Deux_Points);}
+{printf("\n Sep_Deux_Points reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Deux_Points);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
 #line 46 "lexical.l"
-{printf("\n Sep_Pourcentage reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Pourcentage);}
+{printf("\n Sep_Pourcentage reconnu \n"); nb_col += yyleng;             find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Pourcentage);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
 #line 47 "lexical.l"
-{printf("\n Sep_Add reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Add);}
+{printf("\n Sep_Add reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Add);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
 #line 48 "lexical.l"
-{printf("\n Sep_equal reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_equal);}
+{printf("\n Sep_equal reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_equal);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
 #line 49 "lexical.l"
-{printf("\n Sep_double_equal reconnu \n"); nb_col += yyleng;            find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_test_equal);      }
+{printf("\n Sep_double_equal reconnu \n"); nb_col += yyleng;            find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_test_equal);      }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
 #line 50 "lexical.l"
-{printf("\n Sep_Sub reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Sub);}
+{printf("\n Sep_Sub reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Sub);}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
 #line 51 "lexical.l"
-{printf("\n Sep_Mult reconnu \n"); nb_col += yyleng;                    find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Mult);}
+{printf("\n Sep_Mult reconnu \n"); nb_col += yyleng;                    find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Mult);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
 #line 52 "lexical.l"
-{printf("\n Sep_Div reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Div);}
+{printf("\n Sep_Div reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Div);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
 #line 53 "lexical.l"
-{printf("\n Sep_tab reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Tabulation);}
+{printf("\n Sep_tab reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Tabulation);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
 #line 54 "lexical.l"
-{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_From);}
+{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_From);}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
 #line 55 "lexical.l"
-{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Final);}
+{printf("\n Mc_from reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Final);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
 #line 56 "lexical.l"
-{printf("\n Mc_PIL reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Pil);}
+{printf("\n Mc_PIL reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Pil);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
 #line 57 "lexical.l"
-{printf("\n Mc_cv2 reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_cv2);}
+{printf("\n Mc_cv2 reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_cv2);}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
 #line 58 "lexical.l"
-{printf("\n Mc_Image reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Image);}
+{printf("\n Mc_Image reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Image);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
 #line 59 "lexical.l"
-{printf("\n Mc_def reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Def);}
+{printf("\n Mc_def reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Def);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
 #line 60 "lexical.l"
-{printf("\n Mc_open reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Open);} 
+{printf("\n Mc_open reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Open);} 
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
 #line 61 "lexical.l"
-{printf("\n Mc_size reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_Size);}
+{printf("\n Mc_size reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_Size);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
 #line 62 "lexical.l"
-{printf("\n Mc_load reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_load);}
+{printf("\n Mc_load reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_load);}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
 #line 63 "lexical.l"
-{printf("\n Mc_resize reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_resize);}
+{printf("\n Mc_resize reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_resize);}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
 #line 64 "lexical.l"
-{printf("\n Mc_save reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_save);}
+{printf("\n Mc_save reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_save);}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
 #line 65 "lexical.l"
-{printf("\n Mc_show reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_show);}
+{printf("\n Mc_show reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_show);}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
 #line 66 "lexical.l"
-{printf("\n Mc_close reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_close);}
+{printf("\n Mc_close reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_close);}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
 #line 67 "lexical.l"
-{printf("\n Mc_convert reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_convert);}
+{printf("\n Mc_convert reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_convert);}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
 #line 68 "lexical.l"
-{printf("\n Mc_new reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_new);}
+{printf("\n Mc_new reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_new);}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
 #line 69 "lexical.l"
-{printf("\n Mc_png reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_png);}
+{printf("\n Mc_png reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_png);}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
 #line 70 "lexical.l"
-{printf("\n Mc_inf reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_inf);}
+{printf("\n Mc_inf reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_inf);}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
 #line 71 "lexical.l"
-{printf("\n Mc_sup reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_sup);}
+{printf("\n Mc_sup reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_sup);}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
 #line 72 "lexical.l"
-{printf("\n Mc_import reconnu \n");nb_col += yyleng;                    find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_import);}
+{printf("\n Mc_import reconnu \n");nb_col += yyleng;                    find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_import);}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
 #line 73 "lexical.l"
-{printf("\n Mc_as reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_as);}
+{printf("\n Mc_as reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_as);}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
 #line 74 "lexical.l"
-{printf("\n Mc_matplot reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_matplotlib);}
+{printf("\n Mc_matplot reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_matplotlib);}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
 #line 75 "lexical.l"
-{printf("\n Mc_for reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_for);}
+{printf("\n Mc_for reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_for);}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
 #line 76 "lexical.l"
-{printf("\n Mc_inrange reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_in_range);}
+{printf("\n Mc_inrange reconnu \n");nb_col += yyleng;                   find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_in_range);}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
 #line 77 "lexical.l"
-{printf("\n Mc_numpy reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_numpy);}
+{printf("\n Mc_numpy reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_numpy);}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
 #line 78 "lexical.l"
-{printf("\n Mc_if reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_if);         }
+{printf("\n Mc_if reconnu \n");nb_col += yyleng;                        find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_if);         }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
 #line 79 "lexical.l"
-{printf("\n Mc_else reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_else);            }
+{printf("\n Mc_else reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_else);            }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
 #line 80 "lexical.l"
-{printf("\n Mc_return reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_return);            }
+{printf("\n Mc_return reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_return);            }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
 #line 81 "lexical.l"
-{printf("\n Comment reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_comment);} 
+{printf("\n Comment reconnu \n");nb_col += yyleng;                      find_hash(yytext,"idf-comment","",5,55,0,0);  return (token_comment);} 
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
 #line 82 "lexical.l"
-{printf("\n CST_REAL reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_REAL);}
+{printf("\n CST_REAL reconnu \n");nb_col += yyleng;                     find_hash(yytext,"CONST","float",atoi(yytext),3,1,1);  return (token_CST_REAL);}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
 #line 83 "lexical.l"
-{printf("\n CST_INT reconnu \n");nb_col += yyleng;                      find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_CST_INT);}
+{printf("\n CST_INT reconnu \n");nb_col += yyleng;                      find_hash(yytext,"CONST","int",atoi(yytext),3,10,1);  return (token_CST_INT);}
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
 #line 84 "lexical.l"
-{printf("\n Mc_Int reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_int);}
+{printf("\n Mc_Int reconnu \n");nb_col += yyleng;                       find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_int);}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
 #line 85 "lexical.l"
-{printf("\n Mc_FLOAT reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_float);}
+{printf("\n Mc_FLOAT reconnu \n");nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_float);}
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
 #line 86 "lexical.l"
-{printf("\n Mc_CHAR reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","hh",5.2,55,55);   return (token_char);}
+{printf("\n Mc_CHAR reconnu \n"); nb_col += yyleng;                     find_hash(yytext,"Mc","",5.2,55,0,0);   return (token_char);}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
 #line 87 "lexical.l"
-{printf("\n Mc_STRING reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_string);}
+{printf("\n Mc_STRING reconnu \n"); nb_col += yyleng;                   find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_string);}
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
 #line 88 "lexical.l"
-{printf("\n Saut_ligne reconnu %d \n",nb_ligne); nb_ligne++; nb_col=1;  find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_retour); }
+{printf("\n Saut_ligne reconnu %d \n",nb_ligne); nb_ligne++; nb_col=1;  find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_retour); }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
 #line 89 "lexical.l"
-{printf("\n point reconnu \n");nb_col++;                                find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_point);}
+{printf("\n point reconnu \n");nb_col++;                                find_hash(yytext,"Mc","",5.2,55,0,0);  return (token_point);}
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
@@ -992,7 +992,7 @@ YY_RULE_SETUP
 case 55:
 YY_RULE_SETUP
 #line 91 "lexical.l"
-{printf("\n IDF reconnu \n");nb_col += yyleng;                          find_hash(yytext,"Mc","hh",5.2,55,55);  return (token_idf);}
+{printf("\n IDF reconnu \n");nb_col += yyleng;                          find_hash(yytext,"idf","",5.2,55,1,1);  return (token_idf);}
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
